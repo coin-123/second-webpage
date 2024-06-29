@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image:linear-gradient( rgb(145, 132, 61), yellow, rgb(145, 132, 61)) ;
+}
+.container i{
+    font-size: 100px;
+}
+.container h1{
+    /* font-size: 50px; */
+    font-weight: bolder;
+    font-size: 50px;
+    animation: head 4s ease-in-out;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes head {
+    from {font-size: 2px;}
+    to {font-size: 50px;} 
+} 
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    position: relative;
+    bottom: -150px;
+    padding: 10px 70px 10px 70px;
+    left: 450px;
+    border: 0;
+    background-color: rgb(235, 203, 21) ;
+    border-radius:  0 0 70% 70%;
+    animation-duration: 4s;
+    animation-name: example;
+    animation-iteration-count: infinite;
+
+
+}
+button:hover{
+    background-color:  rgb(235, 203, 21);
+    cursor: pointer;
+    padding: 12px 72px 12px 72px;
+}
+  
+  @keyframes example {
+    0%   { background-image:linear-gradient(  yellow, rgb(145, 132, 61), yellow) ;}
+    25%  {    background-image:linear-gradient(  yellow, rgb(145, 132, 61), yellow) ;
+    }
+    50%  {    background-image:linear-gradient( rgb(145, 132, 61), yellow, rgb(145, 132, 61)) ;
+    }
+    /* 100% {background-image:linear-gradient( rgb(145, 132, 61), yellow, rgb(145, 132, 61)) ;} */
+  }
+

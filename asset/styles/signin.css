@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image:linear-gradient( rgb(145, 132, 61), yellow, rgb(145, 132, 61)) ;
+}
+
+.arrow-icon{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: rgb(59, 58, 58);
+}
+
+.arrow-icon i{
+    font-size: xx-large;
+    position: relative;
+    animation: arrow 4s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+/* @keyframes arrow {
+    from {left: 0px;}
+    to {left: 100px;} 
+} */
+
+.register-form{
+    background-color: rgb(136, 135, 77);
+    /* opacity:9 ; */
+    padding-top: 15px;
+    width: 50%;
+    height: 80%;
+}
+input {
+    outline: none;
+    border: none;
+    background-color: rgb(214, 207, 197);
+    color: black;
+    width: 300px;
+    height: 40px;
+}
+.head{
+    /* margin-bottom: 15px; */
+    margin-top: px;
+    text-align: center; 
+}
+.two{
+  /* background-color: red; */
+  position: relative;
+  top: 130px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.second{
+    margin-bottom: 15px;
+}
+.secon{
+    margin-bottom: 25px;
+}
+.btn{
+    position: relative;
+    top: 150px;
+    justify-content: center;
+    display: flex;
+    height: 45px;
+    /* background-color: blue; */
+}
+.btn button{
+    border-radius: 30%;
+    width: 70%;
+    color: antiquewhite;
+    border: none;
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(63, 63, 36);
+}
