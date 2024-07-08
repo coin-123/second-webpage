@@ -12,7 +12,7 @@
         <a href="index.html" class="arrow-icon">
             <i class="fa fa-arrow-left" ></i>
         </a>
-           <form action="" class="register-form">
+           <form action="" class="register-form" id="signup-form">
             <div class="head">
                 <h1>REGISTRATION</h1>
             </div>
@@ -20,31 +20,32 @@
            <div class="two">
             <div class="second">
                 <p>First Name</p>
-                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="First Name" name="username" >
+                <div id="errmsg"></div>
             </div>
            <div class="second">
             <p>Last Name</p>
-            <input type="text" placeholder="Last Name" required>`   
+            <input type="text" placeholder="Last Name" name="lastname">  
            </div>
         </div>
           <div class="two">
             <div class="second">
-                <p>Last Name</p>
-                <input type="text" placeholder="Last Name" required>
+                <p>Age</p>
+                <input type="text" placeholder="Enter Age (optional)" name="age">
                </div>
                 <div class="second">
                     <p>Email address</p>
-                <input type="text" placeholder="Email address" required>
+                <input type="text" placeholder="Email address" name="email">
                 </div>
           </div>
            <div class="two">
             <div class="second">
                 <p>Password</p>
-            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Password" name="password">
             </div>
             <div class="second">
                 <p>Confirm Password</p>
-            <input type="password" placeholder="Confirm Password" required>
+            <input type="password" placeholder="Confirm Password" name="Confirmpassword">
             </div>
            </div>
             <div class="check">
@@ -58,10 +59,12 @@
                 </span>
             </div>
             <div class="btn">
-                <button type="submit"> <a href="success.html">Sign Up</a> </button>
+                <button> Sign Up </button>
             </div>
           </div>
         </form>
     </div>
+
+    <script src="asset/js/signup.js"></script>
 </body>
 </html>

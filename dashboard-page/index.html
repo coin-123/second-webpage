@@ -6,11 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script>
+        if(!sessionStorage.getItem('logins')){
+       alert('You are not authorized to be here!');
+       location.href= '../signin.html'
+
+       // welcomemsg.innerHTML = "Welcome " + userData.user
+   }
+   </script>
+   
 </head>
 <body>
     <div class="container">
         <header class="head">
-            <h3>Euildint</h3>
+            <div class="wel">
+                
+                <h3>Euildint</h3>
+
+            </div>
+            <h3 id="welcome-msg"></h3>
            <div class="links">
             <a href="">Home</a>
             <a href="">Home</a>
@@ -42,8 +56,15 @@
             <div class="certificate">
                 <i class="fa fa-lightbulb-o"></i>
             </div>
+            <button id="logout" type="button">Logout <i class="fa fa-circle-arrow-up"></i> </button>
+
            </div>
         </div>
     </div>
+
+
+
+   
+    <script src="../asset/js/dashboard.js"></script>
 </body>
 </html>

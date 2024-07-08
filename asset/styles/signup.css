@@ -103,3 +103,9 @@ a{
     align-items: center;
     width: 15%;
 }
+#errmsg{
+    color: rgb(87, 42, 42);
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
